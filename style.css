@@ -1,0 +1,74 @@
+body {
+    background-color: #f0f2f5;
+    transition: background-color 0.5s ease;
+}
+
+.weather-icon-lg {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+/* Dynamic Backgrounds */
+.bg-clear {
+    background: linear-gradient(135deg, #FF512F, #DD2476); /* Orange-Red */
+}
+
+.bg-clouds {
+    background: linear-gradient(135deg, #485563, #29323c); /* Grey-Blue */
+}
+
+.bg-rain, .bg-drizzle {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Blue */
+}
+
+.bg-thunderstorm {
+    background: linear-gradient(135deg, #141E30, #243B55); /* Dark Blue/Black */
+}
+
+.bg-snow {
+    background: linear-gradient(135deg, #83a4d4, #b6fbff); /* Ice Blue */
+    color: #333 !important; /* Override white text for light background */
+}
+
+.bg-mist, .bg-fog, .bg-haze {
+    background: linear-gradient(135deg, #3E5151, #DECBA4); /* Mossy Grey */
+}
+
+.bg-default {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Standard Blue */
+}
+
+/* Forecast Cards */
+#forecastGrid .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#forecastGrid .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#forecastGrid img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Text Shadow for better readability on gradients */
+#currentWeatherCard.text-white {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Spinner */
+#loadingSpinner .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
